@@ -50,6 +50,9 @@ public class GameManager : MonoBehaviour
         initBullet();
 
         StartCoroutine(EnemySpawn());
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
